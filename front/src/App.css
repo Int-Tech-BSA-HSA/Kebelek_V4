@@ -1,0 +1,266 @@
+/* General Styles */
+.App {
+  text-align: center;
+}
+
+.App.logged-in {
+  /* Styles when the user is logged in */
+  background-color: #f4f4f4;
+  
+}
+
+/* Display Sidebar when logged in */
+.App.logged-in .sidebar {
+  display: block;
+}
+
+/* Hide Sidebar when not logged in */
+.App:not(.logged-in) .sidebar {
+  display: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation Menu Styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -4000px; /* Hidden by default */
+  width: 300px;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  left: 0; /* Visible when open */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.sidebar-body {
+  padding: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Chat List */
+.chat-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-title {
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.chat-title:hover {
+  text-decoration: underline;
+}
+
+.delete-chat-button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.create-chat-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-chat-button {
+  padding: 8px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-chat-button:hover {
+  background-color: #218838;
+}
+
+/* Toggle Button (Menu Icon) */
+.menu-icon {
+  position: fixed;
+  top: 10px;
+  left: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 2000;
+  color: #ffffff;
+}
+
+.menu-icon:hover {
+  color: #555;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Below the menu-icon but above main content */
+  display: none;
+}
+
+.sidebar-open .overlay {
+  display: block; /* Show overlay when sidebar is open */
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-open .main-content {
+  margin-left: 300px; /* Adjust main content margin when sidebar is open */
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+/* User Icon Positioning */
+.top-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.user-icon {
+  cursor: pointer;
+  /* ...existing styles... */
+  color: white;
+}
+
+/* User Menu Links */
+.user-menu {
+  display: flex;
+  gap: 10px; /* Space between links */
+  margin-left: 10px; /* Space between icon and menu */
+}
+
+.user-menu a {
+  color: green;
+  text-decoration: none;
+}
+
+.user-menu a:hover,
+.user-menu a:visited {
+  color: green;
+}
+

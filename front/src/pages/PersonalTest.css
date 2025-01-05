@@ -1,0 +1,185 @@
+/* PersonalTest.css */
+
+/* Container for the personal test */
+.personal-test-container {
+   background-color: #ffffff;
+   padding: 2.5rem;
+   border-radius: 10px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+   max-width: 900px;
+   width: 80%;
+   margin: 3rem auto;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ /* Headers */
+ .personal-test-container h1,
+ .personal-test-container h2 {
+   text-align: center;
+   color: #333333;
+ }
+ 
+ .personal-test-container h1 {
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .personal-test-container h2 {
+   font-size: 1.8rem;
+   margin-bottom: 2rem;
+ }
+ 
+ /* Form Group */
+ .form-group {
+   margin-bottom: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ 
+ /* Labels */
+ .form-group label {
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+   color: #555555;
+   font-size: 1rem;
+ }
+ 
+ /* Input Fields */
+ .form-group input,
+ .question-card textarea {
+   width: 90%;
+   padding: 1rem; /* Increased padding */
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   font-size: 1rem; /* Increased font size */
+   transition: border-color 0.3s, box-shadow 0.3s;
+ }
+ 
+ .question-card textarea {
+   height: 100px; /* Increased height for multiple lines */
+   resize: vertical; /* Allows vertical resizing */
+ }
+ 
+ .form-group input:focus,
+ .question-card textarea:focus {
+   border-color: #2563eb;
+   box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+   outline: none;
+ }
+ 
+ /* Unit Labels */
+ .unit-label {
+   margin-top: 0.3rem;
+   font-size: 0.9rem;
+   color: #777777;
+ }
+ 
+ /* Buttons */
+ .button {
+   padding: 0.9rem 1.5rem;
+   background-color: #2563eb;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ .button:hover {
+   background-color: #1d4ed8;
+ }
+ 
+ /* Disabled Button State */
+ .button:disabled {
+   background-color: #a5b4fc;
+   cursor: not-allowed;
+ }
+ 
+ /* Secondary Buttons */
+ .button-secondary {
+   background-color: #007bff;
+ }
+ 
+ .button-secondary:hover {
+   background-color: #0069d9;
+ }
+ 
+ /* Result Display */
+ .result {
+   margin-top: 2rem;
+   text-align: center;
+   font-size: 1.2rem;
+   color: #333333;
+ }
+ 
+ /* Error Message */
+ .error-message {
+   color: red;
+   font-size: 0.95rem;
+   margin-bottom: 1rem;
+ }
+ 
+ /* Question Card */
+ .question-card {
+   margin-bottom: 20px;
+   padding: 15px;
+   border: 1px solid #cccccc;
+   border-radius: 8px;
+   background-color: #f9f9f9;
+ }
+ 
+ /* Comparison Result Card */
+ .comparison-card {
+   margin-bottom: 15px;
+   padding: 15px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   background-color: #e2e3e5;
+ }
+ 
+ .comparison-card.correct {
+   background-color: #d4edda;
+   border-color: #c3e6cb;
+ }
+ 
+ .comparison-card.incorrect {
+   background-color: #f8d7da;
+   border-color: #f5c6cb;
+ }
+ 
+ /* Advice and Suggested Book */
+ .advice-section {
+   padding: 15px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   background-color: #fff3cd;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 600px) {
+   .personal-test-container {
+     padding: 1.5rem;
+   }
+ 
+   .personal-test-container h1 {
+     font-size: 1.6rem;
+   }
+ 
+   .personal-test-container h2 {
+     font-size: 1.4rem;
+   }
+ 
+   .button {
+     width: 100%;
+     padding: 0.8rem;
+     font-size: 1rem;
+   }
+ 
+   .question-card textarea {
+     height: 80px; /* Adjusted height for smaller screens */
+   }
+ }
+ 

@@ -1,0 +1,127 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+   position: fixed;
+   top: 0;
+   left: -250px; /* Hidden by default */
+   width: 250px;
+   height: 100vh;
+   background-color: #f4f4f4;
+   padding: 20px;
+   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+   transition: left 0.3s ease;
+   overflow-y: auto;
+   z-index: 1000;
+   display: none; /* Hide by default */
+ }
+ 
+ .sidebar.open {
+   left: 0; /* Show Sidebar */
+ }
+ 
+ .sidebar-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+ 
+ .sidebar-header h2 {
+   margin: 0;
+   font-size: 1.5em;
+   color: #333;
+ }
+ 
+ .close-button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: #333;
+ }
+ 
+ .chat-list {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .chat-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   margin-bottom: 10px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ .chat-item:hover {
+   background-color: #e9e9e9;
+ }
+ 
+ .chat-title {
+   flex: 1;
+ }
+ 
+ .delete-chat-button {
+   background: none;
+   border: none;
+   color: #dc3545;
+   cursor: pointer;
+   font-size: 1.2em;
+   transition: color 0.3s;
+ }
+ 
+ .delete-chat-button:hover {
+   color: #bd2130;
+ }
+ 
+ .create-chat {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+ }
+ 
+ .create-chat-input {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   outline: none;
+   margin-bottom: 10px;
+ }
+ 
+ .create-chat-button {
+   padding: 8px;
+   background-color: #28a745;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ .create-chat-button:hover {
+   background-color: #218838;
+ }
+ 
+ .error {
+   color: red;
+   margin-bottom: 10px;
+ }
+
+.green-text {
+    color: white !important; /* Changed to white for better visibility */
+}
+
+/* Ensure Sidebar or other components do not have styles that affect .top-right */
+
+/* Optional: Hide sidebar content when not logged in */
+.App:not(.logged-in) .sidebar {
+  display: none;
+}
+
+.App.logged-in .sidebar {
+  display: block; /* Show Sidebar when logged in */
+}

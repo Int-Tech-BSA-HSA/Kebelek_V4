@@ -1,0 +1,109 @@
+/* ChemicalEquilibrium.css */
+
+/* Container for the calculator */
+.calculator-container {
+   background-color: #ffffff;
+   padding: 2.5rem;
+   border-radius: 10px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+   max-width: 500px;
+   width: 90%;
+   margin: 3rem auto;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ /* Header */
+ .calculator-container h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   color: #333333;
+   font-size: 1.8rem;
+ }
+ 
+ /* Form Group */
+ .form-group {
+   margin-bottom: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ 
+ /* Labels */
+ .form-group label {
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+   color: #555555;
+   font-size: 1rem;
+ }
+ 
+ /* Input Fields */
+ .form-group input {
+   width: 100%;
+   padding: 0.85rem 1rem;
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   font-size: 1rem;
+   transition: border-color 0.3s, box-shadow 0.3s;
+ }
+ 
+ .form-group input:focus {
+   border-color: #2563eb;
+   box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+   outline: none;
+ }
+ 
+ /* Unit Labels */
+ .unit-label {
+   margin-top: 0.3rem;
+   font-size: 0.9rem;
+   color: #777777;
+ }
+ 
+ /* Calculate Button */
+ .calculate-button {
+   width: 100%;
+   padding: 0.9rem;
+   background-color: #2563eb;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ .calculate-button:hover {
+   background-color: #1d4ed8;
+ }
+ 
+ /* Result Display */
+ .result {
+   margin-top: 2rem;
+   text-align: center;
+   font-size: 1.2rem;
+   color: #333333;
+ }
+ 
+ /* Error Message */
+ .error-message {
+   color: red;
+   font-size: 0.95rem;
+   margin-top: 0.5rem;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 600px) {
+   .calculator-container {
+     padding: 1.5rem;
+   }
+ 
+   .calculator-container h2 {
+     font-size: 1.5rem;
+   }
+ 
+   .calculate-button {
+     font-size: 1rem;
+   }
+ }
+ 

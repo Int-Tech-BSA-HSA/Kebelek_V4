@@ -1,0 +1,84 @@
+/* LoginPage.css */
+
+/* Container for the login form */
+.login-container {
+   background-color: #fff;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   max-width: 400px;
+   width: 90%;
+   margin: auto;
+ }
+ 
+ /* Header of the login form */
+ .login-container h2 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   color: #333;
+ }
+ 
+ /* Form group for inputs */
+ .form-group {
+   margin-bottom: 1rem;
+ }
+ 
+ /* Labels for inputs */
+ .form-group label {
+   display: block;
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+   color: #555;
+ }
+ 
+ /* Input fields */
+ .form-group input {
+   width: 90%;
+   padding: 0.75rem;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1rem;
+   transition: border-color 0.3s;
+ }
+ 
+ .form-group input:focus {
+   border-color: #2563eb;
+   outline: none;
+ }
+ 
+ /* Login button */
+ .login-button {
+   width: 90%;
+   background-color: #2563eb;
+   color: #fff;
+   padding: 0.75rem;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: 500;
+   font-size: 1rem;
+   transition: background-color 0.3s;
+ }
+ 
+ .login-button:hover {
+   background-color: #1d4ed8;
+ }
+ 
+ /* Error message */
+ .error-message {
+   color: red;
+   margin-bottom: 1rem;
+   text-align: center;
+ }
+ 
+
+
+ /* Form group for password confirmation */
+.form-group.confirm-password {
+   position: relative;
+ }
+ 
+ /* Password toggle button specific for confirm password */
+ .confirm-password .toggle-button {
+   right: 10px;
+ }
