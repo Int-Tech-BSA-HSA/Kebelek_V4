@@ -1,3 +1,7 @@
+AI based lab assistant developed by H. S. Akdan and B. S. Altunkaya
+
+
+
 Very simple to run:
 1- Go in project directory
 2- "cd /back/" then "npm install" then "npm start" (WILL RUN ON PORT 3000 DO NOT MODIFY)
