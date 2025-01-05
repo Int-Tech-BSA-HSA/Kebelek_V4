@@ -1,5 +1,5 @@
 AI based lab assistant developed by H. S. Akdan and B. S. Altunkaya
-
+VERY IMPORTANT! Before grading, reach out for the .env file through MS teams please.
 
 
 Very simple to run:
